@@ -1,0 +1,539 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>domenus</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header--card">
+                <a href="order.html" role="button" class="shopping-cart">
+                    <span class="badge">12</span>
+                    <i class="domenus-shop-basket"></i>
+                    &nbsp;
+                </a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="sr-only">Показать меню</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Домены<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="domain-services-cost.html">Зарегистрировать домен</a></li>
+                            <li><a href="domain_packages.html">Домены пакетами</a></li>
+                            <li><a href="new-gTLD.html">Новые домены</a></li>
+                            <li><a href="cyrillic-domains.html">Кириллические домены</a></li>
+                            <li><a href="#">Перенос доменов</a></li>
+                            <li><a href="geography-domains.html">Географические домены</a></li>
+                            <li><a href="certificat-domain.html">Свидетельство на домен</a></li>
+                            <li><a href="whois.html">Whois</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Услуги<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="partner-program.html">Партнерская программа</a></li>
+                            <li><a href="seo-site.html">Продвижение сайта</a></li>
+                            <li><a href="business-mail.html">Бизнеc-почта</a></li>
+                            <li><a href="EDS.html">ЭЦП</a></li>
+                            <li><a href="ssl.html">SSL-сертификаты</a></li>
+                            <li><a href="#">Веб-редирект</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Помощь<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="support.html">Поддержка</a></li>
+                            <li>
+                                <a class="btn btn-default btn-modal-lg" data-toggle="modal" data-target=".admin-modal">Связаться с владельцем</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Информация <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="payments.html">Способы оплаты</a></li>
+                            <li><a href="about-company.html">О компании</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="authorization.html" id="signin" class="btn btn-default btn-square btn-lg" role="button">
+                            Вход
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<div class="push-sticky"></div>
+<main>
+    <section>
+        <div class="container-fluid">
+            <nav class="row menu-breadcrumbs hidden-xs">
+                <ul class="menu-breadcrumbs--title">
+                    <li class="title">
+                        <span>Информация</span>
+                    </li>
+                    <li class="title">
+                        <i class="fa fa-angle-double-right"></i>
+                        <span>Способы оплаты</span>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="title-h1">Способы оплаты</h1>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="table-nav-pills">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active">
+                        <a href="#fco-payment-body-cashless" data-toggle="pill">Безналичный
+                            платёж</a>
+                    </li>
+                    <li>
+                        <a href="#fco-payment-body-cards"  data-toggle="pill">Банковские
+                            карты</a>
+                    </li>
+                    <li>
+                        <a href="#fco-payment-body-terminals"  data-toggle="pill">Терминалы
+                            оплаты</a>
+                    </li>
+                    <li>
+                        <a href="#fco-payment-body-ecash"  data-toggle="pill">Электронные
+                            деньги</a>
+                    </li>
+                    <li>
+                        <a href="#fco-payment-body-office"  data-toggle="pill">Оплата
+                            в офисе</a>
+                    </li>
+                    <li>
+                        <a href="#fco-payment-body-mobile"  data-toggle="pill">Мобильные
+                            операторы</a>
+                    </li>
+                </ul>
+                <div class="table-body-pills">
+                    <div id="fco-payment-body-cashless" class="fco-payment-body  active">
+                        <div class="fco-payment-body--icons">
+                            <img src="images/icons/bank.jpg" alt="bank"/>
+                        </div>
+                        <p>
+                            Счет на авансовый платеж выставляется в <a href="https://be.domenus.ru/finances">Панели управления услугами</a>, в разделе «Финансы».
+                        </p>
+
+                        <p>
+                            Для ускорения зачисления денежных средств на баланс необходимо отсканировать/сфотографировать квитанцию с отметкой банка и отправить ее на <a href="mailto:info@domenus.ru">info@domenus.ru</a>.
+                        </p>
+
+                        <p>
+                            <strong>Сбербанк-Онлайн</strong>
+                        </p>
+
+                        <ul class="fco-text-list">
+                            <li>
+                                <i></i><span>В Панели управления услугами зайдите в  раздел «Финансы».</span>
+                            </li>
+
+                            <li>
+                                <i></i><span>Используя интерфейс панели, выставите счёт на необходимую сумму, либо выберете один из ранее сформированных и неоплаченных счетов.</span>
+                            </li>
+
+                            <li>
+                                <i></i><span>Выберете оплату Сбербанк Онлайн и нажмите «Оплатить».</span>
+                            </li>
+
+                            <li>
+                                <i></i><span>Введите логин и пароль от Яндекса и следуйте указаниям системы:</span>
+                                <ul class="fco-text-list">
+                                    <li>
+                                        <i></i><span>В поле «Способ оплаты» выберите «Сбербанк Онлайн».</span>
+                                    </li>
+
+                                    <li>
+                                        <i></i><span>Укажите номер телефона – на него придет подтверждение платежа.</span>
+                                    </li>
+
+                                    <li>
+                                        <i></i><span>Оставьте email, если хотите получить письмо с информацией о платеже.</span>
+                                    </li>
+
+                                    <li>
+                                        <i></i><span>Нажмите «Продолжить».</span>
+                                    </li>
+
+                                    <li>
+                                        <i></i><span>Вы попадете на сайт Сбербанк Онлайн: введите логин и пароль для входа.</span>
+                                    </li>
+
+                                    <li>
+                                        <i></i><span>Откроется страница «Оплата заказа». Выберите карту, с которой банк спишет средства, и нажмите «Оплатить».</span>
+                                    </li>
+
+                                    <li>
+                                        <i></i><span>Проверьте данные платежа и нажмите кнопку «Подтвердить по SMS».</span>
+                                    </li>
+
+                                    <li>
+                                        <i></i><span>Банк вышлет вам SMS с паролем подтверждения. Введите его в нужное поле и нажмите «Подтвердить».</span>
+                                    </li>
+
+                                    <li>
+                                        <i></i><span>Сайт покажет статус операции – «Исполняется банком». Нажмите «Продолжить».
+                                            <br/>
+                                            Когда платеж пройдет, Сбербанк вышлет SMS с оповещением.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p>
+                            <strong>Реквизиты ООО «Регистратор»:</strong>
+                            <br/>
+                            Юридический адрес: 109147, г. Москва, ул. Воронцовская 35Б, корпус 2, этаж 4, помещение II, комната 7
+                            <br/>
+                            ИНН: 7709963967 КПП: 770901001
+                            <br/>
+                            Расчетный счет: 40702810602200003417 в "АЛЬФА-БАНК" (АО) г. Москва
+                            <br/>
+                            Корр. счет: 30101810200000000593
+                            <br/>
+                            БИК: 044525593
+                            <br/>
+                            ОГРН 5147746167905
+                            <br/>
+                            Генеральный директор: Шаров Дмитрий Вячеславович
+                        </p>
+
+                        <p>
+                            <strong>Оплата для физических лиц:</strong>
+                            <br/>
+                            Расчетный счет: 40702810338250039134 в Сбербанке России ОАО Люблинском отделении №7977/20 г. Москва
+                            <br/>
+                            Корр.счет: 30101810400000000225
+                            <br/>
+                            БИК: 044525225
+                        </p>
+
+                    </div>
+
+                    <div id="fco-payment-body-cards" class="fco-payment-body">
+                        <div class="fco-payment-body--icons">
+                            <img src="images/icons/visa.jpg" alt="visa"/>
+                            <img src="images/icons/mastercard.jpg" alt="mastercard"/>
+                        </div>
+
+                        <p>
+                            Вы можете моментально и без комиссии оплатить услуги, используя банковскую карточку VISA или MasterCard. Оплата происходит через систему Яндекс.Деньги.
+                        </p>
+
+                        <p>
+                            <strong>Инструкция по оплате:</strong>
+                        </p>
+
+                        <ul class="fco-text-list">
+                            <li><i></i><span>В <a href="https://be.domenus.ru/finances">Панели управления услугами</a> зайдите в  раздел «Финансы».</span></li>
+                            <li><i></i><span>Используя интерфейс панели, выставите счёт на необходимую сумму, либо выберете один из ранее сформированных и неоплаченных счетов.</span></li>
+                            <li><i></i><span>Выберете способ оплаты «Оплата кредитными картами».</span></li>
+                            <li><i></i><span>Система перенаправит вас на страницу оплаты в сервисе «Яндекс.Деньги».</span></li>
+                            <li><i></i><span>Введите данные банковской карты: номер, срок действия, имя и фамилию, а также 3 цифры с оборотной стороны (код CVV/CVC). Не забудьте указать e-mail: на него придет информация о платеже.</span></li>
+                            <li><i></i><span>Если для вашей карты включена дополнительная защита 3-D Secure, вы будете перенаправлены на сайт банка для подтверждения платежа.</span></li>
+                            <li><i></i><span>Готово! Чтобы вернуться в магазин, нажмите на ссылку под чеком.</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="fco-payment-body-terminals" class="fco-payment-body">
+                        <div class="fco-payment-body--icons">
+                            <img src="images/icons/bank_sberbank.jpg" alt="sberbank"/>
+                            <img src="images/icons/trm_eleksnet.jpg" alt="eleksnet"/>
+                            <img src="images/icons/web_euroweb.jpg" alt="euroweb"/>
+                            <img src="images/icons/web_svyaznoy.jpg" alt="svyaznoy"/>
+                            <img src="images/icons/tel_mts.jpg" alt="mts"/>
+                            <img src="images/icons/mkb.png" alt="mkb"/>
+                        </div>
+                        <p>
+                            Оплата производится с помощью сервиса Яндекс.Деньги.
+                        </p>
+
+                        <p>
+                            <strong>Инструкция по оплате:</strong>
+                        </p>
+
+                        <ul class="fco-text-list">
+                            <li><i></i><span>В <a href="https://be.domenus.ru/finances">Панели управления услугами</a> зайдите в  раздел «Финансы».</span></li>
+                            <li><i></i><span>Используя интерфейс панели, выставите счёт на необходимую сумму, либо выберете один из ранее сформированных и неоплаченных счетов.</span></li>
+                            <li><i></i><span>Выберете способ оплаты «Оплата через терминал».</span></li>
+                            <li><i></i><span>Система перенаправит вас на страницу оплаты в сервисе «Яндекс.Деньги».</span></li>
+                            <li><i></i><span>Введите номер телефона, чтобы получить SMS с кодом платежа. Вы можете также указать e-mail. На этот адрес будет направлены код платежа с инструкцией, а еще вы получите уведомление после того, как платеж будет принят.</span></li>
+                            <li><i></i><span>Сохраните код в SMS. Он нужен для завершения платежа в терминале или салоне связи.</span></li>
+                            <li><i></i><span>На странице также отобразится код платежа и инструкция.  Ее можно распечатать и сохранить.</span></li>
+                            <li><i></i><span>Для завершения платежа вам нужно найти ближайший <a href="https://money.yandex.ru/pay/doc.xml?id=526209&cps_theme=default">терминал или салон связи</a> и внести наличные. Не забудьте код платежа и сумму к оплате.</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="fco-payment-body-ecash" class="fco-payment-body">
+                        <div class="fco-payment-body--icons">
+                            <img src="images/icons/yandex.png" alt="yandex"/>
+                            <img src="images/icons/webnoney.png" alt="webnoney"/>
+                            <img src="images/icons/qiwi.jpg" alt="qiwi"/>
+                        </div>
+                        <div class="fco-h3">
+                            <strong>Яндекс.Деньги</strong>
+                        </div>
+
+                        <p>
+                            Для оплаты электронными деньгами нужно открыть кошелек в Яндекс.Деньги, а так же пополнить его баланс.
+                        </p>
+
+                        <p>
+                            <strong>Инструкция по оплате:</strong>
+                        </p>
+
+                        <ul class="fco-text-list block-text-margin">
+                            <li><i></i><span>В <a href="https://be.domenus.ru/finances">Панели управления услугами</a> зайдите в  раздел «Финансы».</span></li>
+                            <li><i></i><span>Используя интерфейс панели, выставите счёт на необходимую сумму, либо выберете один из ранее сформированных и неоплаченных счетов.</span></li>
+                            <li><i></i><span>Выберете способ оплаты «Оплата через Яндекс.Деньги.</span></li>
+                            <li><i></i><span>Вы попадете на страницу оплаты в соответствующем сервисе.</span></li>
+                            <li><i></i><span>Далее следуйте инструкциям электронной платежной  системы.</span></li>
+                        </ul>
+
+                        <div class="fco-h3">
+                            <strong>WebMoney</strong>
+                        </div>
+
+                        <p>
+                            Для оплаты электронными деньгами нужно открыть кошелек в WebMoney, а так же пополнить его баланс.
+                        </p>
+
+                        <p>
+                            Инструкция по оплате:
+                        </p>
+
+                        <ul class="fco-text-list block-text-margin">
+                            <li><i></i><span>В <a href="https://be.domenus.ru/finances">Панели управления услугами</a> зайдите в  раздел «Финансы».</span></li>
+                            <li><i></i><span>Используя интерфейс панели, выставите счёт на необходимую сумму, либо выберете один из ранее сформированных и неоплаченных счетов.</span></li>
+                            <li><i></i><span>Выберете способ оплаты «Оплата через WebMoney».</span></li>
+                            <li><i></i><span>Вы попадете на страницу оплаты в соответствующем сервисе.</span></li>
+                            <li><i></i><span>Далее следуйте инструкциям электронной платежной системы.</span></li>
+                        </ul>
+
+                        <div class="fco-h3">
+                            <strong>QIWI</strong>
+                        </div>
+
+                        <p>
+                            Оплата производится с помощью сервиса QIWI (QIWI Wallet).
+                            <br/>
+                            Для оплаты электронными деньгами нужно быть зарегистрированным  в QIWI Wallet, а так же пополнить его баланс.
+                        </p>
+
+                        <p>
+                            Инструкция по оплате:
+                        </p>
+
+                        <ul class="fco-text-list block-text-margin">
+                            <li><i></i><span>В <a href="https://be.domenus.ru/finances">Панели управления услугами</a> зайдите в  раздел «Финансы».</span></li>
+                            <li><i></i><span>Используя интерфейс панели, выставите счёт на необходимую сумму, либо выберете один из ранее сформированных и неоплаченных счетов.</span></li>
+                            <li><i></i><span>Выберете способ оплаты «Оплата через QIWI».</span></li>
+                            <li><i></i><span>Вы попадете на страницу оплаты в соответствующем сервисе.</span></li>
+                            <li><i></i><span>Далее следуйте инструкциям электронной платежной системы.</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="fco-payment-body-office" class="fco-payment-body">
+                        <div class="fco-payment-body--icons">
+                            <img src="images/icons/cash.jpg" alt="cash"/>
+                        </div>
+                        <p>
+                            Вы можете оплатить услуги по кассе в нашем Московском <a href="contacts.html">офисе</a>.
+                        </p>
+
+                        <p>
+                            В день посещения обязательно закажите пропуск на территорию БЦ «Фаворит». Для оформления пропуска при себе необходимо иметь паспорт.
+                        </p>
+
+                        <p>
+                            Для юридических лиц при себе необходимо иметь доверенность на оплату.
+                        </p>
+                    </div>
+
+                    <div id="fco-payment-body-mobile" class="fco-payment-body">
+                        <div class="fco-payment-body--icons">
+                            <img src="images/icons/tel_bee.jpg" alt="bee"/>
+                            <img src="images/icons/tel_megafon.jpg" alt="megafon"/>
+                            <img src="images/icons/tel_mts.jpg" alt="mts"/>
+                        </div>
+                        <p>
+                            Оплата производится с помощью сервиса Яндекс.Деньги.
+                        </p>
+
+                        <p>
+                            <strong>Инструкция по оплате:</strong>
+                        </p>
+
+                        <ul class="fco-text-list">
+                            <li><i></i><span>В <a href="https://be.domenus.ru/finances">Панели управления услугами</a> зайдите в  раздел «Финансы».</span></li>
+                            <li><i></i><span>Используя интерфейс панели, выставите счёт на необходимую сумму, либо выберете один из ранее сформированных и неоплаченных счетов.</span></li>
+                            <li><i></i><span>Выберете способ оплаты способ оплаты «Мобильный платеж. Мегафон», «Мобильный платеж. Билайн» или «Мобильный платеж. МТС»</span></li>
+                            <li><i></i><span>Укажите номер мобильного телефона, со счета которого нужно списать деньги.</span></li>
+                            <li><i></i><span>Оставьте e-mail, чтобы получить письмо с информацией о платеже.</span></li>
+                            <li><i></i><span>Мы отправим запрос вашему оператору связи — дождитесь от него SMS.</span></li>
+                            <li><i></i><span>Подтвердите платеж в течение 20 минут. После этого деньги будут списаны со счета Вашего мобильного телефона.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <!--modal admin-->
+            <div class="modal admin-modal fade in" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                <span aria-hidden="true"><img src="images/icons/close.png" alt="x"/></span>
+                            </button>
+                            <h3 class="modal-title">Связаться с владельцем</h3>
+                        </div>
+                        <form class="form-horizontal order-form">
+                            <div class="modal-body">
+                                <h4>Через данную форму вы сможете написать сообщение администратору домена</h4>
+                                <div class="text-center">
+                                    <div class="form-group">
+                                        <label for="domain-name"></label>
+                                        <input type="text" class="form-control" name="domain_name" placeholder="Домен" id="domain-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="client-phone"></label>
+                                        <input type="text" class="form-control" name="phone" data-masked="phone" placeholder="Ваши контакты" id="client-phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message"></label>
+                                        <textarea class="form-control" rows="6" id="message" placeholder="Ваше сообщение"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="btn btn-default btn-block">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--/end modal-->
+        </div>
+    </section>
+    <div class="push"></div>
+</main>
+<footer>
+    <div class="footer-top">
+        <div class="fco-central-container">
+            <dl class="hidden-xs hidden-sm">
+                <dt>Проекты</dt>
+                <dd><a href="http://www.citytelecom.ru" rel="nofollow" target="_blank">CityTelecom.ru</a></dd>
+                <dd><a href="http://www.datahouse.ru" rel="nofollow" target="_blank">DataHouse.ru</a></dd>
+                <dd><a href="http://www.hoster.ru" rel="nofollow" target="_blank">Hoster.ru</a></dd>
+                <dd><a href="http://halk.pro/" rel="nofollow" target="_blank">Halk.pro</a></dd>
+            </dl>
+            <dl class="hidden-xs">
+                <dt>Доменные имена</dt>
+                <dd><a href="domain-services-cost.html">Зарегистрировать домен</a></dd>
+                <dd><a href="whois.html">Whois</a></dd>
+                <dd><a href="new-gTLD.html">Новые домены</a></dd>
+                <dd><a href="certificat-domain.html">Свидетельство на домен</a></dd>
+            </dl>
+            <dl class="hidden-xs">
+                <dt>Услуги</dt>
+                <dd><a href="seo-site.html">Продвижение</a></dd>
+                <dd><a href="business-mail.html">Бизнес-почта</a></dd>
+                <dd><a href="partner-program.html">Партнерская программа</a></dd>
+            </dl>
+            <dl class="hidden-xs">
+                <dt>О компании</dt>
+                <dd><a href="payments.html">Способы оплаты</a></dd>
+                <dd><a href="contacts.html">Контакты</a></dd>
+                <dd><a href="news.html">Новости</a></dd>
+                <dd><a href="support.html">Поддержка</a></dd>
+            </dl>
+            <div class="footer-contacts">
+                <div class="phone-list">
+                    <span><em>+7 (495) 77-542-77</em></span>
+                    <span><em>8 (800) 20-00-542</em><br>(бесплатно)</span>
+                </div>
+                <div class="mail-list">
+                    <span>E-mail:</span>
+                    <a class="write-mail" href="mailto:support@domenus.ru">support@domenus.ru</a>
+                    <a  class="write-mail" href="mailto:info@domenus.ru">info@domenus.ru</a>
+                </div>
+                <div class="networks">
+                    <a href="https://vk.com/filancogroup" target="_blank" rel="nofollow">
+                        <i class="domenus-VK"></i>
+                    </a>
+                    <a href="http://blog.filanco.ru/" target="_blank" rel="nofollow">
+                        <i class="domenus-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/domenus.ru" target="_blank" rel="nofollow">
+                        <i class="domenus-FB"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom hidden-sm hidden-xs">
+        <div class="fco-central-container">
+            <div>
+                © 1999–2015 Domenus.ru
+            </div>
+
+            <div>
+                <a  href="http://filanco.ru/" target="_blank" rel="nofollow">Все проекты ГК Филанко</a>
+            </div>
+
+            <div>
+                Аккредитованный регистратор .RU, .SU, .РФ
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="scripts/vendor.js"></script>
+
+<script src="scripts/bootstrap-plugins.js"></script>
+
+<script src="scripts/jplugins.js"></script>
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

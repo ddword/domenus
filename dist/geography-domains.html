@@ -1,0 +1,784 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>domenus</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header--card">
+                <a href="order.html" role="button" class="shopping-cart">
+                    <span class="badge">12</span>
+                    <i class="domenus-shop-basket"></i>
+                    &nbsp;
+                </a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="sr-only">Показать меню</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Домены<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="domain-services-cost.html">Зарегистрировать домен</a></li>
+                            <li><a href="domain_packages.html">Домены пакетами</a></li>
+                            <li><a href="new-gTLD.html">Новые домены</a></li>
+                            <li><a href="cyrillic-domains.html">Кириллические домены</a></li>
+                            <li><a href="#">Перенос доменов</a></li>
+                            <li><a href="geography-domains.html">Географические домены</a></li>
+                            <li><a href="certificat-domain.html">Свидетельство на домен</a></li>
+                            <li><a href="whois.html">Whois</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Услуги<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="partner-program.html">Партнерская программа</a></li>
+                            <li><a href="seo-site.html">Продвижение сайта</a></li>
+                            <li><a href="business-mail.html">Бизнеc-почта</a></li>
+                            <li><a href="EDS.html">ЭЦП</a></li>
+                            <li><a href="ssl.html">SSL-сертификаты</a></li>
+                            <li><a href="#">Веб-редирект</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Помощь<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="support.html">Поддержка</a></li>
+                            <li>
+                                <a class="btn btn-default btn-modal-lg" data-toggle="modal" data-target=".admin-modal">Связаться с владельцем</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Информация <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="payments.html">Способы оплаты</a></li>
+                            <li><a href="about-company.html">О компании</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="authorization.html" id="signin" class="btn btn-default btn-square btn-lg" role="button">
+                            Вход
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<div class="push-sticky"></div>
+<main>
+<section class="stripe top-search">
+    <div class="container-fluid">
+        <nav class="row menu-breadcrumbs">
+            <ul class="menu-breadcrumbs--title hidden-xs">
+                <li class="title">
+                    <span>Домены</span>
+                </li>
+                <li class="title">
+                    <i class="fa fa-angle-double-right"></i>
+                    <span>Географические домены</span>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="title-h1">Географические домены</h1>
+    </div>
+    <div class="search-row domain-selection">
+        <div class="container-fluid">
+            <form id="logged_out_search" action="" class="form-home homepage-search search-container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-7 col-md-7 no-padding">
+                        <div class="flexbox-container">
+                            <div class="textarea-container auto-expand-item">
+                                <textarea spellcheck="false" class="form-control input-lg prox-reg showtip search-sld" name="domain_search" placeholder="Введите доменное имя"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-5 no-padding">
+                        <div class="zone col-xs-6 col-sm-6 col-md-8 no-padding">
+                            <input type="text" class="form-control input-lg search-tld loading" placeholder="Зоны" />
+                            <a class="hint top" href="#">Перенести к нам</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 no-padding">
+                            <a id="search" type="button" class="btn btn-default btn-square btn-lg">
+                                Проверить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="domain-descr text-block sans-title">
+            <p class="subparagraph">
+                Географические доменные имена призваны показать географическую принадлежность домена и размещенному на нем сайта к тому или иному субъекту Российской Федерации или специализацию ресурса.
+                Вы хотите подчеркнуть ориентированность услуги на определенный регион?
+                Тогда эти домены для вас!
+            </p>
+        </div>
+        <div class="divider"></div>
+    </div>
+</section>
+<section class="full-width">
+    <div class="container-fluid">
+        <div class="table table-domains">
+            <div class="thead-domains">
+                <span>Новые домены</span>
+                <a type="button" class="table-toggle collapsed" data-toggle="collapse" data-target="#tbody1">
+                    <i class="control-element"></i>
+                </a>
+            </div>
+            <div class="body-table collapse" id="tbody1">
+                <div class="column col-xs-12 col-sm-3 no-padding">
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.RU</a>
+                        </div>
+                        <div class="domain-price">
+                            <span class="new">150</span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.RU.COM</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>300 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a href="domain-rf.html">.РФ</a>
+                        </div>
+                        <div class="domain-price">
+                            <span class="best">400 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.SU</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>125 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.ОНЛАЙН</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.САЙТ</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.COM.UA</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.KIEV</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>120 </span><span>руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-xs-12 col-sm-3 no-padding">
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.RU</a>
+                        </div>
+                        <div class="domain-price">
+                            <span class="new">150 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.RU.COM</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>300 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a href="domain-rf.html">.РФ</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>400 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.SU</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>125 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.ОНЛАЙН</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.САЙТ</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.COM.UA</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.KIEV</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>120 </span><span>руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-xs-12 col-sm-3 no-padding">
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.RU</a>
+                        </div>
+                        <div class="domain-price">
+                            <span class="new">150 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.RU.COM</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>300 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a href="domain-rf.html">.РФ</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>400 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.SU</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>125 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.ОНЛАЙН</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.САЙТ</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.COM.UA</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.KIEV</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>120 </span><span>руб.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-xs-12 col-sm-3 no-padding">
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.RU</a>
+                        </div>
+                        <div class="domain-price">
+                            <span class="new">150 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.RU.COM</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>300 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a href="domain-rf.html">.РФ</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>400 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.SU</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>125 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.ОНЛАЙН</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.САЙТ</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.COM.UA</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>100 </span><span>руб.</span>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="domain-checkbox">
+                            <input type="checkbox">
+                            <i class="icon-checkbox"></i>
+                        </div>
+                        <div class="domain-name">
+                            <a>.KIEV</a>
+                        </div>
+                        <div class="domain-price">
+                            <span>120 </span><span>руб.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tbody-limit">
+                <a>Показать все</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="editor-domains">
+        <div class="editor-domains--content">
+            <div class="editor-domains--body">
+                <div class="editor-domains--total"><span></span></div>
+                <div class="editor-domains--price"><span></span></div>
+            </div>
+            <div class="editor-domains--button">
+                <button type="button">
+                    <i class="domenus-totop"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="slider marketing domain-banner">
+        <div class="item">
+            <div class="block-content geography">
+                <div class="container">
+                    <div class="text-block text-center">
+                        <div class="head col-xs-12">
+                            <span>Домен</span>
+                            <div class="title-domain">.ru.net </div>
+                        </div>
+                        <div class="advantages col-xs-12 col-md-offset-2 col-md-8">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4">Географический</div>
+                                <div class="col-xs-12 col-sm-12 col-md-4">Специализированный</div>
+                                <div class="col-xs-12 col-sm-12 col-md-4">Региональный</div>
+                            </div>
+                            <div class="delimeter"></div>
+                        </div>
+                        <div class="detail col-xs-12">
+                            <a href="#learn-more" class="btn btn-default btn-lg">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="block-content estate">
+                <div class="container">
+                    <div class="text-block text-center">
+                        <div class="head col-xs-12">
+                            <span>Домен</span>
+                            <div class="title-domain">.недвижимость</div>
+                        </div>
+                        <div class="advantages col-xs-12 col-md-offset-3 col-md-6">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4">Бесплатно</div>
+                                <div class="col-xs-12 col-sm-12 col-md-4">Безопасно</div>
+                                <div class="col-xs-12 col-sm-12 col-md-4">Удобно</div>
+                            </div>
+                            <div class="delimeter"></div>
+                        </div>
+                        <div class="detail col-xs-12">
+                            <a href="#learn-more" class="btn btn-default btn-lg">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <h2 class="text-center">Области применения</h2>
+        <div class="text-hint block-info block-text-margin">
+            <div class="block-info-body">
+                <div class="column-info">
+                    <div class="col-xs-12 no-padding">
+                        <ul class="disc">
+                            <li><span>Красивый составной домен (site.ru.net)</span></li>
+                            <li><span>Регионы РФ (business.msk.ru</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div></div>
+                <div class="column-info">
+                    <div class="col-xs-12 no-padding">
+                        <ul class="disc">
+                            <li><span>Областные центры</span></li>
+                            <li><span>Коммерческие проекты</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="marketing-campaign red no-push">
+    <div class="container container-center">
+        <div>
+            <span>
+                <strong>Domenus.ru</strong> является аккредитованным регистратором в географических доменах <strong>RUNETа</strong>.
+            </span>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <!--modal admin-->
+        <div class="modal admin-modal fade in" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true"><img src="images/icons/close.png" alt="x"/></span>
+                        </button>
+                        <h3 class="modal-title">Связаться с владельцем</h3>
+                    </div>
+                    <form class="form-horizontal order-form">
+                        <div class="modal-body">
+                            <h4>Через данную форму вы сможете написать сообщение администратору домена</h4>
+                            <div class="text-center">
+                                <div class="form-group">
+                                    <label for="domain-name"></label>
+                                    <input type="text" class="form-control" name="domain_name" placeholder="Домен" id="domain-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-phone"></label>
+                                    <input type="text" class="form-control" name="phone" data-masked="phone" placeholder="Ваши контакты" id="client-phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message"></label>
+                                    <textarea class="form-control" rows="6" id="message" placeholder="Ваше сообщение"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit" class="btn btn-default btn-block">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/end modal-->
+    </div>
+</section>
+<div class="push"></div>
+</main>
+<footer>
+    <div class="footer-top">
+        <div class="fco-central-container">
+            <dl class="hidden-xs hidden-sm">
+                <dt>Проекты</dt>
+                <dd><a href="http://www.citytelecom.ru" rel="nofollow" target="_blank">CityTelecom.ru</a></dd>
+                <dd><a href="http://www.datahouse.ru" rel="nofollow" target="_blank">DataHouse.ru</a></dd>
+                <dd><a href="http://www.hoster.ru" rel="nofollow" target="_blank">Hoster.ru</a></dd>
+                <dd><a href="http://halk.pro/" rel="nofollow" target="_blank">Halk.pro</a></dd>
+            </dl>
+            <dl class="hidden-xs">
+                <dt>Доменные имена</dt>
+                <dd><a href="domain-services-cost.html">Зарегистрировать домен</a></dd>
+                <dd><a href="whois.html">Whois</a></dd>
+                <dd><a href="new-gTLD.html">Новые домены</a></dd>
+                <dd><a href="certificat-domain.html">Свидетельство на домен</a></dd>
+            </dl>
+            <dl class="hidden-xs">
+                <dt>Услуги</dt>
+                <dd><a href="seo-site.html">Продвижение</a></dd>
+                <dd><a href="business-mail.html">Бизнес-почта</a></dd>
+                <dd><a href="partner-program.html">Партнерская программа</a></dd>
+            </dl>
+            <dl class="hidden-xs">
+                <dt>О компании</dt>
+                <dd><a href="payments.html">Способы оплаты</a></dd>
+                <dd><a href="contacts.html">Контакты</a></dd>
+                <dd><a href="news.html">Новости</a></dd>
+                <dd><a href="support.html">Поддержка</a></dd>
+            </dl>
+            <div class="footer-contacts">
+                <div class="phone-list">
+                    <span><em>+7 (495) 77-542-77</em></span>
+                    <span><em>8 (800) 20-00-542</em><br>(бесплатно)</span>
+                </div>
+                <div class="mail-list">
+                    <span>E-mail:</span>
+                    <a class="write-mail" href="mailto:support@domenus.ru">support@domenus.ru</a>
+                    <a  class="write-mail" href="mailto:info@domenus.ru">info@domenus.ru</a>
+                </div>
+                <div class="networks">
+                    <a href="https://vk.com/filancogroup" target="_blank" rel="nofollow">
+                        <i class="domenus-VK"></i>
+                    </a>
+                    <a href="http://blog.filanco.ru/" target="_blank" rel="nofollow">
+                        <i class="domenus-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/domenus.ru" target="_blank" rel="nofollow">
+                        <i class="domenus-FB"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom hidden-sm hidden-xs">
+        <div class="fco-central-container">
+            <div>
+                © 1999–2015 Domenus.ru
+            </div>
+
+            <div>
+                <a  href="http://filanco.ru/" target="_blank" rel="nofollow">Все проекты ГК Филанко</a>
+            </div>
+
+            <div>
+                Аккредитованный регистратор .RU, .SU, .РФ
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="scripts/vendor.js"></script>
+
+<script src="scripts/bootstrap-plugins.js"></script>
+
+<script src="scripts/jplugins.js"></script>
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
